@@ -95,6 +95,7 @@ class Rice extends React.Component {
         </div>
         <div>
           <h3>Effort</h3>
+          <p>Storypoints</p>
           <select
             name="effort"
             value={this.state.effort}
@@ -111,7 +112,6 @@ class Rice extends React.Component {
         </div>
         <div>
           <h4>Rice Score</h4>
-          <p>Storypoints</p>
           <span style={{ fontSize: "84px" }}>
             {isNaN(riceScore) ? "feed me" : riceScore}
           </span>
