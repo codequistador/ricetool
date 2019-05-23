@@ -6,8 +6,8 @@ class Rice extends React.Component {
     this.state = {
       reach: {},
       impact: {},
-      confidence: ".5",
-      effort: "1",
+      confidence: "--",
+      effort: "--",
     }
     this.handleInputChange = this.handleInputChange.bind(this)
   }
@@ -88,6 +88,7 @@ class Rice extends React.Component {
             value={this.state.confidence}
             onChange={this.handleInputChange}
           >
+            <option value="--">--</option>
             <option value=".5">50%</option>
             <option value=".8">80%</option>
             <option value="1">100%</option>
@@ -101,6 +102,7 @@ class Rice extends React.Component {
             value={this.state.effort}
             onChange={this.handleInputChange}
           >
+            <option value="--">--</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
