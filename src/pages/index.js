@@ -6,7 +6,7 @@ class Rice extends React.Component {
     this.state = {
       reach: {},
       impact: {},
-      confidence: {},
+      confidence: ".5",
       effort: {},
     }
     this.handleInputChange = this.handleInputChange.bind(this)
